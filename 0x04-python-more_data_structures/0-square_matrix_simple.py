@@ -11,5 +11,3 @@ def square_matrix_simple(matrix=[]):
             new_matrix[i][j] = (lambda x: x ** 2)(matrix_copy[i][j])
 
     return new_matrix
-
-
