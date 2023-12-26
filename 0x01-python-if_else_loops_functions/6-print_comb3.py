@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-for i in range(10):
-    for j in range(10):
-        if (i != j and i < j) and i < 9:
-            if (i == 8 and j == 9):
-                print('{0}{1}'.format(i, j))
+for a in range(10):
+    for b in range(10):
+        if (a != b and a < b) and a < 9:
+            if (a == 8 and b == 9):
+                print('{0}{1}'.format(a, b))
             else:
-                print('{0}{1}, '.format(i, j), end='')
+                print('{0}{1}, '.format(a, b), end='')
