@@ -5,7 +5,7 @@ if __name__ == "__main__":
     if index == 0:
         print("arguments")
     elif index == 1:
-        printf("argument = 1:")
+        print("argument = 1:")
     else:
         print("{} arguments:".format(index))
     for i in range(index):
