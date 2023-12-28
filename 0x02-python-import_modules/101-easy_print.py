@@ -1,3 +1,2 @@
 #!/usr/bin/python3
-import pyiscool
-pyiscool.py_function()
+__import__('pyiscool').py_function()
