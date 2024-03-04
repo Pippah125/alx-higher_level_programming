@@ -11,10 +11,9 @@ def add_integer(a, b=98):
     Float arguments are typecasted to ints before addition is performed.
 
     Raises:
-        TypeError: If either of a or b is a non-integer and non-float.
+        TypeError: If either a or b is a non-integer and non-float.
     """
-    if ((not isinstance(a, int) and not isinstance(a, float))):
-        raise TypeError("a must be an integer")
-    if ((not isinstance(b, int) and not isinstance(b, float))):
-        raise TypeError("b must be an integer")
-    return (int(a) + int(b))
+    try:
+        return int(a) + int(b)
+    except (ValueError, TypeError):
+        raise TypeError("Both a and b must be convertible to integers")
